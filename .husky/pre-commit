@@ -1,0 +1,2 @@
+# Check TypeScript project types integrity
+npx tsc -p tsconfig.json --noEmit

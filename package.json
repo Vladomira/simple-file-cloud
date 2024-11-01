@@ -1,0 +1,40 @@
+{
+  "private": true,
+  "name": "simple-cloud",
+  "description": "Simple file cloud",
+  "version": "0.0.0",
+  "type": "module",
+  "license": "UNLICENSED",
+  "main": "index.js",
+  "engines": {
+    "node": "20"
+  },
+  "author": {
+    "name": "Julia Vladomira",
+    "email": "juliavladomira@gmail.com"
+  },
+  "scripts": {
+    "prepare": "node .husky/install.mjs",
+    "dev": "tsx --watch --watch-preserve-output --disable-proto=delete --no-global-search-paths --zero-fill-buffers --pending-deprecation --title=backend src/server.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "@fastify/auth": "^5.0.1",
+    "@fastify/env": "^5.0.1",
+    "@fastify/jwt": "^9.0.1",
+    "@fastify/multipart": "^9.0.1",
+    "@fastify/request-context": "^6.0.1",
+    "@fastify/sensible": "^6.0.1",
+    "@prisma/client": "^5.21.1",
+    "fastify": "^5.1.0",
+    "fastify-plugin": "^5.0.1"
+  },
+  "devDependencies": {
+    "@types/node": "^22.8.6",
+    "husky": "^9.1.6",
+    "pino-pretty": "^11.3.0",
+    "prisma": "^5.21.1",
+    "tsx": "^4.19.2",
+    "typescript": "^5.6.3"
+  }
+}
